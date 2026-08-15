@@ -3,8 +3,7 @@ layout: default
 permalink: /
 ---
 <p class="intro">
-  <strong>Hi, I'm {{ site.title }}.</strong> {{ site.description }} Posts are numbered in the order I wrote them, like lab notebook entries.
-</p>
+  <strong>YOLO! Here are a few things I’ve been wanting to share with you. I’m learning along the way too! If you spot any mistakes or have any suggestions, feel free to drop me an email.
 
 <div class="section-label">Series</div>
 <div class="series-grid">
