@@ -1,0 +1,39 @@
+# ---------------------------------------------------------------------------
+# Site-wide settings. This is the ONE place your name/description lives —
+# every page pulls from here automatically. Change these and every page
+# updates on the next commit.
+# ---------------------------------------------------------------------------
+
+title: "Adarsh Kamatagi"        # <-- your name (change this)
+tagline: "notebook"
+description: "Technical writing on machine learning, systems, and things I'm learning."
+url: "https://adarsh-s-kamatagi.github.io"   # <-- your github pages url
+baseurl: ""
+github_username: adarsh-s-kamatagi           # <-- your github username
+
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: null   # disables server-side highlighting; highlight.js does it in-browser instead
+
+collections:
+  chapters:
+    output: true
+    permalink: /series/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

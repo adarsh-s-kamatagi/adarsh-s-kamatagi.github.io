@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% assign chapters = site.chapters | where: "series", page.series | sort: "chapter" %}
+{% assign total = chapters.size %}
+{% assign idx = 0 %}
+{% for c in chapters %}{% if c.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign prev = nil %}
+{% assign next = nil %}
+{% if idx > 0 %}{% assign prev = chapters[idx | minus: 1] %}{% endif %}
+{% assign next_idx = idx | plus: 1 %}
+{% if next_idx < total %}{% assign next = chapters[next_idx] %}{% endif %}
+{% assign hub_url = '/series/' | append: page.series | append: '/' %}
+
+<p class="crumb"><a href="{{ hub_url | relative_url }}">{{ page.series_title }}</a> / Chapter {{ page.chapter }} of {{ total }}</p>
+
+<article class="post">
+  <div class="post-eyebrow">chapter {{ page.chapter }}</div>
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">
+    {{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.read_time | default: "5 min read" }}
+    {% for tag in page.tags %}&middot; <span class="tag">#{{ tag }}</span> {% endfor %}
+  </p>
+
+  {% if page.abstract %}
+  <div class="abstract">
+    <strong>Abstract</strong>
+    {{ page.abstract }}
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+  <nav class="chapter-nav">
+    {% if prev %}
+    <a class="chapter-nav-link" href="{{ prev.url | relative_url }}">
+      <span class="chapter-nav-label">Previous</span>
+      <span class="chapter-nav-title">{{ prev.title }}</span>
+    </a>
+    {% else %}
+    <span class="chapter-nav-empty"><span class="chapter-nav-label">start of series</span></span>
+    {% endif %}
+
+    {% if next %}
+    <a class="chapter-nav-link next" href="{{ next.url | relative_url }}">
+      <span class="chapter-nav-label">Next</span>
+      <span class="chapter-nav-title">{{ next.title }}</span>
+    </a>
+    {% else %}
+    <span class="chapter-nav-empty" style="text-align:right;"><span class="chapter-nav-label">end of series</span></span>
+    {% endif %}
+  </nav>
+</article>

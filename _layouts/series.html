@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign chapters = site.chapters | where: "series", page.series | sort: "chapter" %}
+
+<a class="back-link" href="{{ '/' | relative_url }}">&larr; index</a>
+
+<div class="series-header">
+  <div class="post-eyebrow">series</div>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description }}</p>
+</div>
+
+<div class="chapter-list">
+  {% for c in chapters %}
+  <a class="chapter-entry" href="{{ c.url | relative_url }}">
+    <span class="chapter-num">{{ c.chapter | prepend: "0" | slice: -2, 2 }}</span>
+    <span class="log-body">
+      <h2 class="log-title">{{ c.title }}</h2>
+      <p class="log-desc">{{ c.description }}</p>
+    </span>
+  </a>
+  {% endfor %}
+</div>
