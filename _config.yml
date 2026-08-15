@@ -4,9 +4,9 @@
 # updates on the next commit.
 # ---------------------------------------------------------------------------
 
-title: "Adarsh Kamatagi"        # <-- your name (change this)
+title: "ask'why"        
 tagline: "notebook"
-description: "Technical writing on machine learning, systems, and things I'm learning."
+description: "Technical writing on things I'm learning."
 url: "https://adarsh-s-kamatagi.github.io"   # <-- your github pages url
 baseurl: ""
 github_username: adarsh-s-kamatagi           # <-- your github username
