@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 ---
-<div class="intro" style="text-align: center; padding: 28px 0 8px;">
+<div style="text-align: center; padding: 28px 0 8px; width: 100%;">
   <p style="margin: 0 0 6px; font-size: 17px; line-height: 1.6; color: var(--ink-soft);">
     असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मा अमृतं गमय ।।
   </p>
