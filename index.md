@@ -2,9 +2,14 @@
 layout: default
 permalink: /
 ---
-<p class="intro">
-  <strong>YOLO! Here are a few things I’ve been wanting to share with you. I’m learning along the way too! If you spot any mistakes or have any suggestions, feel free to drop me an email.
-
+<div class="intro" style="text-align:center; padding: 8px 0 24px;">
+  <p style="margin: 0 0 6px; font-size: 17px; color: var(--ink-soft);">
+    असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मा अमृतं गमय ।।
+  </p>
+  <p style="margin: 0; font-size: 13px; font-family: var(--font-mono); color: var(--ink-faint); font-style: italic;">
+    Lead me from untruth to truth, from darkness to light, from death to immortality.
+  </p>
+</div>
 <div class="section-label">Series</div>
 <div class="series-grid">
   {% assign series_slugs = site.chapters | map: "series" | uniq %}
