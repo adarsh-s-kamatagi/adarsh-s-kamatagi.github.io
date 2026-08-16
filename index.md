@@ -2,11 +2,11 @@
 layout: default
 permalink: /
 ---
-<div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; text-align: center; padding: 40px 20px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-bottom: 8px; margin-top: 0;">
-  <p style="margin: 0 0 10px; font-size: 19px; line-height: 1.7; font-family: var(--font-serif); font-weight: 600; color: var(--gold);">
+<div class="intro" style="text-align: center; padding: 28px 0 8px;">
+  <p style="margin: 0 0 6px; font-size: 17px; line-height: 1.6; color: var(--ink-soft);">
     असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मा अमृतं गमय ।।
   </p>
-  <p style="margin: 0; font-size: 13px; font-family: var(--font-mono); color: var(--ink-faint); font-style: italic; letter-spacing: 0.02em;">
+  <p style="margin: 0; font-size: 13px; font-family: var(--font-mono); color: var(--ink-faint); font-style: italic;">
     lead me from untruth to truth, from darkness to light, from death to immortality
   </p>
 </div>
