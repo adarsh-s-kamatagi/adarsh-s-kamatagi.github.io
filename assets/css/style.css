@@ -17,7 +17,7 @@
   --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
 
-  --measure: 680px;
+  --measure: 760px;
   --radius: 3px;
 }
 
@@ -45,7 +45,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.65;
   transition: background 0.15s ease, color 0.15s ease;
 }
