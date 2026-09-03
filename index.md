@@ -4,10 +4,10 @@ permalink: /
 ---
 <div style="text-align: center; padding: 28px 0 8px; width: 100%;">
   <p style="margin: 0 0 6px; font-size: 17px; line-height: 1.6; color: var(--ink-soft);">
-    असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मा अमृतं गमय ।।
+    असतो मा सद्गमय । तमसो मा ज्योतिर्गमय । मृत्योर्मामृतं गमय ॥
   </p>
   <p style="margin: 0; font-size: 13px; font-family: var(--font-mono); color: var(--ink-faint); font-style: italic;">
-    lead me from untruth to truth, from darkness to light, from death to immortality
+    Lead me from untruth to Truth, from darkness to Light, from death to Immortality
   </p>
 </div>
 <div class="section-label">Series</div>
