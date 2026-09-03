@@ -5,13 +5,14 @@ permalink: /search.json
 [
   {% assign items = site.posts | concat: site.chapters %}
   {% for item in items %}
-  {
+   {
     "title": {{ item.title | jsonify }},
     "description": {{ item.description | default: "" | jsonify }},
     "url": {{ item.url | relative_url | jsonify }},
     "type": {% if item.series %}"chapter"{% else %}"note"{% endif %},
     "series_title": {{ item.series_title | default: "" | jsonify }},
-    "tags": {{ item.tags | default: "" | jsonify }}
+    "tags": {{ item.tags | default: "" | jsonify }},
+    "content": {{ item.content | strip_html | strip_newlines | normalize_whitespace | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
