@@ -24,7 +24,7 @@ permalink: /
   {% endfor %}
 </div>
 
-<div class="section-label">Notes</div>
+<div class="section-label">Posts</div>
 <div class="log">
   {% assign total = site.posts.size %}
   {% for post in site.posts %}
