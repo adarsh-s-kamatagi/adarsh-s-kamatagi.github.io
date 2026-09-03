@@ -642,3 +642,10 @@ footer.site-footer {
   font-family: var(--font-mono);
   font-size: 13px;
 }
+
+.series-card-title,
+.log-title,
+.series-header h1,
+.post h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
