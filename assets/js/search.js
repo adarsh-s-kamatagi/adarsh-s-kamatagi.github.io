@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const matches = data
       .filter((item) => {
-        const haystack = (
-          item.title + " " + item.description + " " + (item.tags || []).join(" ")
-        ).toLowerCase();
+       const haystack = (
+  item.title + " " + item.description + " " + (item.content || "") + " " + (item.tags || []).join(" ")
+).toLowerCase();
         return haystack.includes(q);
       })
       .slice(0, 8);
