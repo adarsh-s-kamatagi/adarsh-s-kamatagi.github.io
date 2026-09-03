@@ -21,7 +21,12 @@ layout: default
     {{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.read_time | default: "5 min read" }}
     {% for tag in page.tags %}&middot; <span class="tag">#{{ tag }}</span> {% endfor %}
   </p>
-
+{% if page.abstract %}
+  <div class="abstract">
+    <strong>Abstract</strong>
+    {{ page.abstract }}
+  </div>
+  {% endif %}
   {{ content }}
 
   <nav class="chapter-nav">
