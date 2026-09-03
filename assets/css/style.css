@@ -14,8 +14,8 @@
   --rule: #dedad0;
   --code-bg: #f1efe8;
 
-  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+--font-serif: "Roboto Slab", Georgia, "Times New Roman", serif;
+--font-mono: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
 
   --measure: 760px;
   --radius: 3px;
